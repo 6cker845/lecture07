@@ -1,4 +1,4 @@
-var DATA_SIZE = 5;
+var DATA_SIZE = 8;
 
 var inputElements = [];
 var outputMean = null;
@@ -21,6 +21,11 @@ var initInputElements = function(){
 /**
  * calcMean: 入力されたデータから平均値を計算して出力する
  */
+
+var showError = function(){
+	
+} 
+ 
 var calcMean = function(){
     var index = 0;
     var sum = 0;
