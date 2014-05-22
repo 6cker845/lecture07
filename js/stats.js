@@ -22,23 +22,23 @@ var initInputElements = function(){
  * calcMean: 入力されたデータから平均値を計算して出力する
  */
 
-var showError = function(){
-	
-} 
- 
 var calcMean = function(){
     var index = 0;
     var sum = 0;
     var n = 0;
-
+    
+    
     while(index < inputElements.length){
         var input = inputElements[index];
         var number = Number(input.value);
         if(!Number.isNaN(number)){
             sum = sum + number;
             n = n + 1;
+        } else {
+	        window.alert("数値のみを記入してください")
         }
         index = index + 1;
+        
     }
 
     if(n > 0){
