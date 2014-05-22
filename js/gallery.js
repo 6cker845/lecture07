@@ -1,12 +1,12 @@
 var photoListElement = document.querySelector("#photos");
 
 var photoList = [
-    {src: "img/200705.png", title: "7月"},
-    {src: "img/200806.png", title: "8月"},
-	  {src: "img/200902.png", title: "9月"},
-	  {src: "img/201008.png", title: "もう1回8月"},
-    {src: "img/front.png", title: "前"},
-    {src:	"img/side.png", title: "横"}
+    {src: "img/apple.png", title: "apple"},
+    {src: "img/facebook.png", title: "facebook"},
+    {src: "img/google.png", title: "google"},
+    {src: "img/instagram.png", title: "もう1回8月"},
+    {src: "img/tumblr.png", title: "前"},
+    {src:	"img/twitter.png", title: "横"}
 ];
 
 var isReady = function(){
@@ -31,6 +31,8 @@ var showPhotos = function(){
             photoListElement.appendChild(elm);
             index = index + 1;
         }
+        // whileは中身がtureになっている間、処理が繰り返される。
+        // while文は終わるように書かなければ、処理が無限に行われてブラウザが固まる。そこは注意しなきゃいけない。
     }
 };
 
@@ -40,3 +42,4 @@ var initApp = function(){
 };
 
 initApp();
+//initAppを呼び出してる
